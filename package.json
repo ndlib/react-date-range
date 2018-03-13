@@ -6,7 +6,7 @@
   "scripts": {
     "start-dev": "babel ./src --watch --out-dir ./lib & cd demo && npm install && npm run start-dev",
     "prebuild": "rm -rf lib/*",
-    "build": "babel ./src --out-dir ./lib",
+    "build": "./node_modules/babel/bin/babel.js ./src --out-dir ./lib",
     "prepublish": "npm run build"
   },
   "keywords": [
